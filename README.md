@@ -23,7 +23,7 @@ fetch('https://randomuser.me/api/')
 
 console.log("Sup?")
 ```
-
+"Hello", "Sup?", "Hi"
 ### Question 2
 
 When fetchData is executed what will be console logged?
@@ -38,6 +38,7 @@ function fetchData(){
 
 fetchData()
 ```
+The fetch request cause it's being stored in the var data.
 
 What will be console logged when the following code is run? Why?
 
@@ -50,6 +51,7 @@ function fetchData(){
 
 fetchData()
 ```
+The JSON response object from the api link, because the .then from the response object request looks for the data in the resulting variable whenever it's called.
 
 What will be console logged when the following code is run? Why?
 
@@ -62,14 +64,17 @@ function fetchData(){
 
 fetchData()
 ```
+The JSON response object from the api link, because if console.log is used in  a .then by itself the program still assumes it is referring to the resulting data.
 
 ### Question 3
 
 In your own words: what does asynchronous mean?
-
+When one process does not rely on the other one being completed or executed to be started.
 ### Question 4
 
 Write out the request and response cycle. What is its purpose? How does it work?
+
+Client sends an HTTP request (get, post etc) to server the server retrieves data and sends a response code once the data is retrieved and its meant to get info from the backend to the frontend.
 
 ### Question 5
 
